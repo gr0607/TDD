@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print ("hello world")
     }
 
     @IBAction func LogInButtonPressed(_ sender: Any) {
