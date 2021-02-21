@@ -9,25 +9,54 @@ import XCTest
 @testable import TDD
 
 class TDDTests: XCTestCase {
-
+    
+    var sut: Validator!
+    
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+       sut = Validator()
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+       sut = nil
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func testWhenEmailIsValid() {
+        XCTAssertEqual(sut.isEmailValid(K.validEmail), true)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testWhenEmailIsInvalid() {
+        XCTAssertEqual(sut.isEmailValid(K.invalidEmail), false)
     }
-
+    
+    func testWhenEmailIsInvalidTwo() {
+        XCTAssertEqual(sut.isEmailValid(K.invalidPostfixEmail), false)
+    }
+    
+    func testWhenEmailIsInvalidThree() {
+        XCTAssertEqual(sut.isEmailValid(K.invalidPostfixEmailDot), false)
+    }
+    
+    func testWhenEmailIsInvalidFour() {
+        XCTAssertEqual(sut.isEmailValid(K.invalidPostfixEmailCom), false)
+    }
+    
+    func testWhenEmailIsInvalidFive() {
+        XCTAssertEqual(sut.isEmailValid(K.invalidPrefixEmail), false)
+    }
+    
+    func testWhenPasswordValid() {
+        XCTAssertEqual(sut.isPasswordValid(K.validPass), true)
+    }
+    
+    func testWhenPasswordInvalidWithLow() {
+        XCTAssertEqual(sut.isPasswordValid(K.invalidPassLow), false)
+    }
+    
+    func testWhenPasswordInvalidWithOutCapitalLetter() {
+        XCTAssertEqual(sut.isPasswordValid(K.invalidPassCapital), false)
+    }
+    
+    func testWhenPasswordInvalidWithOutDigit() {
+        XCTAssertEqual(sut.isPasswordValid(K.invalidPassNumber), false)
+    }
 }

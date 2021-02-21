@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84B5393825E16A3400DEB29A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B5393725E16A3400DEB29A /* Constants.swift */; };
 		84CCE80A25E0272800810187 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CCE80925E0272800810187 /* AppDelegate.swift */; };
 		84CCE80C25E0272800810187 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CCE80B25E0272800810187 /* SceneDelegate.swift */; };
 		84CCE80E25E0272800810187 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CCE80D25E0272800810187 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84B5393725E16A3400DEB29A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		84CCE80625E0272800810187 /* TDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CCE80925E0272800810187 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84CCE80B25E0272800810187 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				84CCE81425E0272900810187 /* LaunchScreen.storyboard */,
 				84CCE81725E0272900810187 /* Info.plist */,
 				84CCE83C25E02EFF00810187 /* Validator.swift */,
+				84B5393725E16A3400DEB29A /* Constants.swift */,
 			);
 			path = TDD;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			files = (
 				84CCE83D25E02EFF00810187 /* Validator.swift in Sources */,
 				84CCE80E25E0272800810187 /* ViewController.swift in Sources */,
+				84B5393825E16A3400DEB29A /* Constants.swift in Sources */,
 				84CCE80A25E0272800810187 /* AppDelegate.swift in Sources */,
 				84CCE80C25E0272800810187 /* SceneDelegate.swift in Sources */,
 			);
